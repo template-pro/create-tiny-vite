@@ -1,6 +1,6 @@
 {
   "name": "create-tiny-vite",
-  "version": "0.0.1-beta.2",
+  "version": "0.0.1-rc.1",
   "description": "Opinionated official template streamlined",
   "main": "index.mjs",
   "type": "module",
