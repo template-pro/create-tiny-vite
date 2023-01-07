@@ -7,12 +7,37 @@
   "bin": {
     "create-tiny-vite": "index.mjs"
   },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
   "author": "Wxh16144",
   "license": "MIT",
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
-  "dependencies": {
-    "create-vite": "latest"
+  "scripts": {
+    "dev": "node index.mjs",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && np --branch=master --yolo --no-publish"
+  },
+  "devDependencies": {
+    "cross-spawn": "7.0.3",
+    "kolorist": "1.6.0",
+    "minimist": "1.2.7",
+    "np": "7.6.3",
+    "prompts": "2.4.2",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.0.2"
+  },
+  "homepage": "https://github.com/template-pro/create-tiny-vite/tree/master#readme",
+  "bugs": {
+    "url": "https://github.com/template-pro/create-tiny-vite/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/template-pro/create-tiny-vite"
   }
 }
