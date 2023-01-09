@@ -10,11 +10,6 @@ export class MyElement extends LitElement {
   static get properties() {
     return {
       /**
-       * Copy for the read the docs hint.
-       */
-      docsHint: { type: String },
-
-      /**
        * The number of times the button has been clicked.
        */
       count: { type: Number },
@@ -42,8 +37,7 @@ export class MyElement extends LitElement {
   static get styles() {
     return css`
       button {
-        margin: 0;
-        padding: 0;
+        box-sizing: inherit;
       }
     `
   }
